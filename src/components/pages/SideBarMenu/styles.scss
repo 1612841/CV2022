@@ -1,0 +1,61 @@
+.sidebar {
+    background: rgba($color: #000000, $alpha: 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-bar {
+        transform: rotate(90deg);
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 0.005px solid rgb(1, 43, 1);
+        width: 72%;
+        max-width: 420px;
+        border-radius: 8px;
+        .btn {
+            width: 100%;
+            padding: 12px 0;
+            color: #fff;
+            background: rgba(255,255,255,0);
+            margin: 12px 8px;
+            font-weight: bolder;
+            font-size: 14px;
+            &:hover {
+                cursor: pointer;
+                background: rgba(255,255,255,0.2);;
+                color: #000;
+                transition: all ease-in-out 0.2s;
+            }
+        }
+    }
+    @media screen and (max-width: 576px) {
+        width: 68vw !important;
+        .menu {
+            width: 84%;
+        }
+    }
+}
+.none-active {
+    @media screen and (min-width: 786px) {
+        left: -400px !important;
+    }
+    @media screen and (max-width: 786px) {
+        left: -50% !important;
+    }
+    @media screen and (max-width: 576px) {
+        left: -62% !important;
+    }
+    @media screen and (max-width: 320px) {
+        left: -54% !important;
+    }
+}
+
+.bg-active {
+    background: rgba($color: #000000, $alpha: 0.2);
+}
+.bg-none-active {
+    background: rgba($color: #000000, $alpha: 0.1);
+}

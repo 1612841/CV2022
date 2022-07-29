@@ -1,0 +1,18 @@
+.education {
+    background: rgb(245, 249, 213);
+    @media screen and (max-width: 576px) {
+        font-size: 12px;
+    }
+    .wrap {
+        background: rgba(9, 66, 15, 0.1);
+        height: 60%;
+        border: 0.005px solid #fff;
+        border-radius: 8px;
+        padding: 0 32px;
+        .disappear {
+            transform: translateY(60%);
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}

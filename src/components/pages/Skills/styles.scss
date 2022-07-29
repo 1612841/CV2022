@@ -1,0 +1,172 @@
+.skills {
+    .back-home {
+        position: absolute;
+        font-size: 12px;
+        font-weight: lighter;
+        font-style: italic;
+        top: 3%;
+        transform: translateX(24%);
+        .backhome {
+            width: 80px;
+            height: 80px;
+            background: url(../../../images//backhome.jpeg) no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+            cursor: pointer;
+            @media screen and (max-width: 996px) {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+    .skill-bg {
+        width: 90px;
+        height: 90px;
+        background: url(../../../images/skillone.jpeg) no-repeat center center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    .softskill,
+    .workskill {
+        @media screen and (max-width: 826px) {
+            text-align: center;
+        }
+        &:hover {
+            background: rgb(241, 247, 220);
+            border-radius: 8px;
+        }
+    }
+
+    .content-bg {
+        width: 90px;
+        height: 90px;
+        background: url(../../../images/skilltwo.jpeg) no-repeat center center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    .skill-active {
+        background: rgb(241, 247, 220);
+        border-radius: 8px;
+    }
+
+    .appear-skill {
+        transform: translateY(300%);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    input[type = range] {
+        -webkit-appearance: none;
+        background: linear-gradient(to right, #c2c2c2 0%, #000000 100%) !important;
+        border-radius: 8px;
+        appearance: none;
+        opacity: 0.7;
+        height: 4px;
+    }
+    .content {
+        .content-wrap {
+            transform: translateY(24%);
+            width: 320px;
+            .wrap {
+                transform: translateY(100%);
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+        .content-wrap-none {
+            transform: translateY(32%);
+            width: 320px;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    @media screen and (max-width: 832px) {
+        input[type = range] {
+            height: 4px;
+        }
+        .content {
+            font-size: 12px !important;
+            .content-wrap {
+                top: 48%;
+                width: 60%;
+            }
+            .content-wrap-none {
+                width: 60%;
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    }
+    .display-none {
+        transform: translateY(100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+    .menu-skills {
+        position: absolute;
+        top: 164px;
+        left: 72px;
+        width: 100%;
+        .pillar {
+            position: absolute;
+            height: 18vh;
+            width: 1px;
+            background: #000000;
+        }
+        .working {
+            margin-top: 16px;
+        }
+        @media screen and (max-width: 826px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            top: 100px;
+            left: 0;
+            .pillar {
+                display: none;
+            }
+            .soft {
+                position: unset;
+                text-align: center;
+                margin: 0 4px;
+            }
+            .working {
+                position: unset;
+                text-align: center;
+                margin: 0 4px;
+            }
+        }
+    }
+    .wrap-bg {
+        @media screen and (max-width: 826px) {
+            position: absolute;
+            top: 176px;
+
+            .skill-bg,
+            .content-bg {
+                width: 40px;
+                height: 40px;
+            }
+            .wrap-skills-bg,
+            .wrap-content-bg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .wrap-content-working {
+        transform: translateY(24%);
+        .content-wrap-FEBE {
+            visibility: visible;
+            opacity: 1;
+        }
+        .content-wrap-none-FEBE {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+
+.home {
+    .name-active {
+        transform: translateX(-32%);
+    }
+
+    .menu-one-active {
+        transform: translate(76%, -440%);
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .menu-two-active {
+        transform: translate(100%, -258%);
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .menu-three-active {
+        transform: translate(180%, -68%);
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .menu-four-active {
+        transform: translate(126%, 122%);
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .menu-five-active {
+        transform: translate(80%, 300%);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu-one-active, 
+    .menu-two-active,
+    .menu-three-active,
+    .menu-four-active,
+    .menu-five-active { 
+        color: rgb(11, 67, 1);
+        &:hover {
+            background: rgb(1, 62, 1);
+            color: #fff
+        }
+    }
+
+    .menu-one,
+    .menu-two,
+    .menu-three,
+    .menu-four,
+    .menu-five {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    @media screen and (max-width: 578px) {
+        .menu-one-active {
+            transform: translate(18%, -440%);
+            visibility: visible;
+            opacity: 1;
+        }
+        .menu-two-active {
+            transform: translate(80%, -258%);
+            visibility: visible;
+            opacity: 1;
+        }
+        .menu-four-active {
+            transform: translate(92%, 122%);
+            visibility: visible;
+            opacity: 1;
+        }
+        .menu-three-active {
+            transform: translate(140%, -68%);
+            visibility: visible;
+            opacity: 1;
+        }
+        .menu-five-active {
+            transform: translate(4%, 300%);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    // caption
+
+    .wrap-caption {
+        transform: translateY(140px);
+    }
+    .wrap-caption-active {
+        transform: translateY(140px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .home-animation {
+        transform: translateY(0%);
+    }
+    .home-none {
+        transform: translateY(200%);
+        visibility: hidden;
+        opacity: 0;
+    }
+    .caption-animation {
+        transform: translateY(140px);
+    }
+    .caption-none {
+        transform: translateY(200px);
+        visibility: hidden;
+        opacity: 0;
+    }
+    .avatar {
+        position: absolute;
+        top: 4%;
+        width: 220px;
+        height: 220px;
+        background: url(../../../images/homebg.jpeg) no-repeat center center ;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    .avatar-active {
+        transform: translateX(-36%);
+    }
+}

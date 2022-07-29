@@ -1,0 +1,33 @@
+.experience {
+    .wrap-content {
+        max-width: 320px;
+        min-width: 300px;
+        padding: 24px 32px;
+        height: 100%;
+        border: 0.005px solid rgb(1, 41, 1);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .item{
+            border: 0.005px solid #000;
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 8px 0;
+        }
+        .item-none {
+            transform: translateY(30%);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @media screen and (max-width: 576px) {
+            position: absolute;
+            transform: translateY(-20%);
+        }
+    }
+    .title-content {
+      display: flex;
+      align-items: flex-end;
+    }
+}
